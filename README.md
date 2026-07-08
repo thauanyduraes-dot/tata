@@ -6,54 +6,89 @@
     <title>Meu Blog Tech</title>
     <style>
         body {
-            font-family: serif;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            background-color: #1a3a6c; /* Tom de azul do fundo */
+            color: white;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        .container {
             display: flex;
             justify-content: center;
-            padding: 50px;
+            gap: 20px;
+            flex-wrap: wrap;
         }
-        .container {
-            background-color: white;
-            padding: 40px;
-            width: 500px;
+
+        .card {
+            background-color: #2c5282; /* Azul um pouco mais claro para os cards */
+            padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
         }
-        h1 {
-            font-size: 42px;
+
+        .card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            font-size: 1.2rem;
             margin-bottom: 10px;
         }
-        .subtitulo {
-            font-size: 20px;
-            margin-bottom: 40px;
-            color: #333;
+
+        .card p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #cbd5e0;
         }
-        h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 20px;
-            line-height: 1.4;
-            color: #1a1a1a;
+
+        .author {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.8rem;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Meu blog tech</h1>
-        
-        <p class="subtitulo">
-            Vou compartilhar conhecimentos sobre tecnologia e programação
-        </p>
+    <header>
+        <h1>Meu Blog Tech</h1>
+        <p>Novidades sobre o mundo da tecnologia e programação</p>
+    </header>
 
-        <h2>Meu primeiro post</h2>
+    <main class="container">
+        <!-- Post 1 -->
+        <article class="card">
+            <div class="icon">💻</div>
+            <h2>Meu primeiro post</h2>
+            <span class="author">Por: Alisson Chagas</span>
+            <p>Este é o começo da minha jornada no desenvolvimento web. Compartilharei meus aprendizados aqui.</p>
+        </article>
 
-        <p>
-            Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.
-        </p>
-    </div>
+        <!-- Post 2 -->
+        <article class="card">
+            <div class="icon">🍃</div>
+            <h2>A popularidade do Node.js é real?</h2>
+            <span class="author">Por: Rodrigo Teixeira</span>
+            <p>Explorando os motivos que tornaram o Node.js uma das tecnologias mais usadas no backend.</p>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="card">
+            <div class="icon">📦</div>
+            <h2>O primeiro passo com CI/CD</h2>
+            <span class="author">Por: Guilherme Souza</span>
+            <p>Entenda como automatizar seus deploys e melhorar a qualidade do seu fluxo de entrega.</p>
+        </article>
+    </main>
 
 </body>
-</html>
